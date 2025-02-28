@@ -17,7 +17,7 @@ public class AIAgentWandering : MonoBehaviour
     {
         navTimer += Time.deltaTime;
 
-        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance || navTimer >= 5.0f)
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance || navTimer >= 10.0f)
         {
             SetRandomDestination();
             navTimer = 0f;

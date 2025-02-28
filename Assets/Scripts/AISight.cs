@@ -12,10 +12,10 @@ public class AISight : MonoBehaviour
             RaycastHit hit;
             if(Physics.Linecast(eyes.position, other.transform.position, out hit))
             {
-                Debug.DrawLine(eyes.position, hit.point, Color.blue, 1.0f);
+                //Debug.DrawLine(eyes.position, hit.point, Color.blue, 1.0f);
                 if(hit.transform.tag == "Hostile")
                 {
-                    Debug.DrawLine(eyes.position, other.transform.position, Color.red, 1.0f);
+                    //Debug.DrawLine(eyes.position, other.transform.position, Color.red, 1.0f);
                     agent.HostileSpotted(other.transform);
                 }
             }
